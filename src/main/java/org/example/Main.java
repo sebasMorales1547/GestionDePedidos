@@ -1,17 +1,50 @@
 package org.example;
-
+import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+    static void main() throws InterruptedException{
+        Main Main = new Main();
+            Main.menuPrincipal();
     }
+
+    public void menuPrincipal() throws InterruptedException{
+
+        //***** VARIABLES *****//
+        char OP = 'S';
+        int opcion = 0;
+        Scanner Scanner = new Scanner(System.in);
+
+        while(OP=='S'){
+
+            System.out.println("""
+                    
+                    -------MENU-------
+                    1. 
+                    2.
+                    3.
+                    
+                    0. Salir
+                    """);
+
+            System.out.print("Seleccione una opción: ");
+            opcion = Scanner.nextInt();
+
+            switch (opcion){
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.err.println("El numero ingresado no es valido, ingrese nuevamente");
+                    Thread.sleep(2000);
+            }
+
+        }
+
+    }
+
+
 }
