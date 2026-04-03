@@ -36,7 +36,7 @@ public class Producto {
         this.stock = stock;
     }
 
-    
+
 
 
 
